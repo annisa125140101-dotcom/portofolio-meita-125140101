@@ -1,0 +1,198 @@
+/* notes: */
+/* display flex agar sejajar (jadi 1 baris sejajar) */
+/* list style agar ilang titiknya */
+/* scrool behavior smooth agar scroll lebih halus */
+/* align items center agar ditengah */
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* STYLE NAVBAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edb16bea;
+    color: #111827;
+    padding: 15px 30px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+.nav-kiri a{
+    text-decoration: none;
+    color: #483014;
+    transition: 0.3s;
+}
+
+.nav-kiri {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-kiri a:hover {
+    color: hwb(32 4% 69% / 0.678)
+    ;
+}
+
+.nav-kanan {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.nav-kanan a {
+    text-decoration: none;
+    color: #111827;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav-kanan a:hover {
+    color: #483014
+    ;
+}
+
+/* STYLE HOME */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #edb16bea;
+    min-height: 100vh;
+    padding: 0 80px;
+}
+
+.home-kiri {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.home-kiri h1 {
+    font-size: 55px;
+    margin: 0;
+}
+
+.home-kiri p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.home-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foto {
+    width: 320px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* STYLE ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background-color: white;
+    color: #483014;
+    min-height: 50vh;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+/* STYLE PROJECT */
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background-color:rgba(255, 255, 255, 0.795);
+    color: #483014;
+    min-height: 50vh;
+}
+
+.project h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.project p {
+    font-size: 18px;
+}
+
+/* STYLE CONTACT */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    background-color: white;
+    color: #483014;
+    min-height: 10vh;
+    gap: 20px;
+}
+
+.contact h1{
+    font-size: 40px;
+    margin: 0px;
+}
+
+.contact p{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.contact div {
+    display: flex;
+    gap: 20px;
+}
+
+.contact div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #5c3c0c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact div a:hover {
+    background-color: rgb(183, 132, 81);
+}
+
+/* STYLE FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd5d5c7;
+    color: #d6985e;
+    padding: 15px;
+}
